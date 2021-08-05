@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');     //J'indique ici que ma page d'accueil est home au lieu de view('welcome');
 });
+
+Route::get('/about-us', function(){
+    return view('about');
+});
