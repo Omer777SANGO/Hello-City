@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');     //J'indique ici que ma page d'accueil est home au lieu de view('welcome');
+    return view('pages/home');     //J'indique ici que ma page d'accueil est home au lieu de view('welcome'); et est dans un sous-doissier pages
 });
 
 Route::get('/about-us', function(){
-    return view('about');
+    return view('pages/about');     //('pages/about')ou ('pages.about') les 2 marches
 });
