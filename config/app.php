@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Africa/Ouagadougou',    //Au lieu de UTC, je vais utiliser heure locale du Ouaga/Burkina
 
     /*
     |--------------------------------------------------------------------------
