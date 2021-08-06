@@ -9,6 +9,7 @@
 @endsection -->
 
 @section('content')
+<img src="/images/wozaka.jpg" alt="Logo WOZAKA">
 
 	<p>Built with &hearts; by WOZAKA</p>
 

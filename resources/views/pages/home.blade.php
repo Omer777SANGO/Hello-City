@@ -8,6 +8,8 @@
 	Hello City
 @endsection -->
 
+<img src="/images/Burkina_Faso.png" alt="Burkina Faso">
+
 @section('content')
 	<h1>Hello from Burkina !</h1>
 
