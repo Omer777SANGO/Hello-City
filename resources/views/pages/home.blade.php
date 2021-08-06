@@ -1,7 +1,7 @@
 @extends('base')
 
 <!-- 1re manière de faire si le contenu est simple -->
-@section('title', 'Hello City')
+@section('title', config('mesvariables.name'))
 
 <!-- 2e manière de faire -->
 <!-- @section('title')
