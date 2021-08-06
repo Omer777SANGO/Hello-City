@@ -1,5 +1,13 @@
 @extends('base')
 
+<!-- 1re manière de faire -->
+@section('title', 'About Us | Hello City')
+
+<!-- 2e manière de faire -->
+<!-- @section('title')
+	About Us | Hello City
+@endsection -->
+
 @section('content')
 
 	<p>Built with &hearts; by WOZAKA</p>

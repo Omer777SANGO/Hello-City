@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hello City</title>
+	<title>@yield('title', 'Contenu par défaut')</title>
 </head>
 <body>
-	
+
 	@yield('content')
 
 	<footer>
