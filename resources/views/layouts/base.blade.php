@@ -3,7 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>@yield('title', config('mesvariables.name'))</title>
+	<!-- <title>@yield('title', config('mesvariables.name'))</title> -->
+
+	<!-- <title>{{ isset($title) ? $title . ' | ' . config('mesvariables.name') : config('mesvariables.name') }}</title> -->
+
+	<!-- Utilisation de fonction helper pour afficher le titre des pages -->
+	<title>{{ page_title($title ?? null) }}</title>
+
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"> 
 </head>
 <body class="py-6 flex flex-col justify-between items-center min-h-screen">
@@ -11,13 +17,6 @@
 		@yield('content')
 	</main>
 	
-	<footer>
-		<p class="text-gray-400">&copy; Copyright {{ date('Y') }} 
-
-			@if(! Route::is('about')) <!-- ceci va retourner true si on est sur la route home -->
-				&middot; <a href="{{ route('about') }}" class="text-indigo-500 hover:text-indigo-600 underline">About Us</a>
-			@endif
-		</p>
-	</footer>
+	@include('layouts/partials/_footer')
 </body>
 </html>

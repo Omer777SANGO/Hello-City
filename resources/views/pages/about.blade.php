@@ -1,7 +1,7 @@
-@extends('base')
+@extends('layouts.base', ['title' => 'About Us'])
 
 <!-- 1re manière de faire -->
-@section('title', 'About Us | '. config('mesvariables.name'))
+<!-- @section('title', 'About Us | '. config('mesvariables.name')) -->
 
 <!-- 2e manière de faire --> 
 <!-- @section('title')

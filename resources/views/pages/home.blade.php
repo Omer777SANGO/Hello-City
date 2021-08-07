@@ -1,7 +1,7 @@
-@extends('base')
+@extends('layouts.base')
 
 <!-- 1re manière de faire si le contenu est simple -->
-@section('title', config('mesvariables.name'))
+<!-- @section('title', config('mesvariables.name')) -->
 
 <!-- 2e manière de faire -->
 <!-- @section('title')
